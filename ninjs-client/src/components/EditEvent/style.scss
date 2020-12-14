@@ -1,0 +1,16 @@
+.event-form {
+    .event-form__submit {
+      width: 150px;
+    }
+  }
+  
+  @media screen and (max-width: 990px) {
+    .event-form__submit {
+      min-width: 100%;
+    }
+  }
+  
+  .form-control-file{ 
+    height: 38px;
+  }
+  

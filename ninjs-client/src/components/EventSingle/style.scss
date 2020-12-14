@@ -1,0 +1,108 @@
+.single__event {
+  width: 100%;
+  min-height: 100vh;
+  .event__banner {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    min-width: 100%;
+    height: 100vh;
+    background-image: url("../../images/event__banner.jpg");
+    background-position: center;
+    background-size: cover;
+    filter: blur(1px);
+  }
+
+  .card__container {
+    width: 80% !important;
+    margin: 80px auto 100px !important;
+    background-color: #fff;
+    border-radius: 0 !important;
+    -webkit-box-shadow: 0px 0px 10px 5px rgb(31, 30, 30) !important;
+    box-shadow: 0px 0px 10px 5px rgb(31, 30, 30) !important;
+  }
+
+  .img__wrapper {
+    width: 100%;
+    height: 350px;
+    .event__image {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .event__info {
+    width: 100%;
+    height: 100%;
+    background-color: #eeeeec !important;
+    color: #333 !important;
+    border-radius: 0 !important;
+    padding: 20px !important;
+    font-weight: bold;
+
+    position: relative;
+    .event__innerInfo {
+      display: block !important;
+    }
+    .event__title {
+      text-align: center;
+      margin: 40px 0 !important;
+      h2 {
+        font-size: 35px !important;
+        font-weight: bold;
+      }
+    }
+    .event__price {
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+  .row {
+    margin: 20px 0;
+    .share__link {
+      button {
+        margin: 5px;
+      }
+    }
+  }
+
+  .event__description {
+    width: 100%;
+    color: rgba(36, 34, 34, 0.767);
+    .event__title {
+      text-align: center;
+      margin: 30px 0;
+      h1 {
+        font-size: 30px;
+        font-weight: bold;
+      }
+    }
+
+    .event__description__text {
+      padding: 20px;
+      margin: 10px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .share__link {
+    width: 100%;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .img__wrapper {
+    max-height: 250px;
+    .event__image {
+      height: 100%;
+    }
+  }
+}

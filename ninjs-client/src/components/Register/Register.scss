@@ -1,0 +1,14 @@
+.register__form {
+  .register__submit {
+    width: 150px;
+  }
+  .error__message {
+    color: red;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .register__submit {
+    min-width: 100%;
+  }
+}

@@ -1,0 +1,17 @@
+.footer__container {
+  background-color: #444;
+  color: #fff;
+  font-weight: bold;
+  padding: 60px 20px 20px 20px;
+
+  li {
+    list-style-type: none;
+    margin-top: 2%;
+  }
+
+  .footer__copyright {
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 0;
+  }
+}

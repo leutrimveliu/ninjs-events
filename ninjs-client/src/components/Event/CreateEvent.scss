@@ -1,0 +1,11 @@
+.event__container {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+@media screen and (max-width: 990px) {
+  .create__form--submit {
+    min-width: 100%;
+  }
+}

@@ -1,0 +1,30 @@
+.form {
+  background-color: rgba(255, 253, 253, 0.699) !important;
+  color: #444;
+  max-width: 75%;
+  min-height: 10vh;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 25%);
+  border-bottom: 4px solid #222;
+  padding: 20px;
+  .form__group {
+    margin-top: 0.5rem;
+  }
+  .form__submit {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .form {
+    border-left: none;
+    border-radius: 0;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 25%);
+    padding: 20px;
+
+    .form__submit {
+      min-width: 100%;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.payment__form {
+  .payment__form__submit {
+    width: 150px;
+  }
+  .error__message {
+    color: red;
+  }
+  .payment-form__price {
+    height: 38px;
+    width: 100%;
+
+    font-weight: bold;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.75);
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .payment__form__submit {
+    min-width: 100%;
+  }
+}

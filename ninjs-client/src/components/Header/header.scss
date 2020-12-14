@@ -1,0 +1,108 @@
+.main__header {
+  padding-bottom: 50px;
+}
+
+.header__links {
+  .header__option {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 15px;
+    position: relative;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .header__option::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 48px;
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+  }
+  .header__option:hover::after {
+    width: 100%;
+  }
+  align-items: center;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.logged__out,
+.logged__out--signup {
+  display: block;
+  color: #222;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0 10px;
+  position: relative;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: background-color 0.1s ease;
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #222;
+    background-color: #ddd;
+  }
+}
+
+.logged__out--signup {
+  background-color: transparent;
+  border: 2px solid #fff;
+  transition: background-color 0.3s ease;
+  color: #fff;
+  &:hover {
+    background-color: #fff;
+    color: #444;
+  }
+}
+
+.mobile__responsive {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.nav__mobile {
+  display: flex;
+  flex-direction: column;
+  .header__option {
+    margin: 20px 0;
+    padding: 10px 10px 10px 10px;
+    color: #fff;
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: none;
+      color: #666;
+    }
+  }
+}
+
+.options {
+  .header__option {
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    width: 100%;
+    &:hover {
+      color: #888;
+      text-decoration: none;
+    }
+  }
+}

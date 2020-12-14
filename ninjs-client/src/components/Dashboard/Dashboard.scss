@@ -1,0 +1,16 @@
+.admin__links {
+  color: #222;
+
+  &:hover {
+    text-decoration: none;
+    color: #222;
+  }
+}
+.dashboard__link {
+  color: #fff;
+  font-weight: bold;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+}

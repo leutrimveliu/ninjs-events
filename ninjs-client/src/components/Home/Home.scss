@@ -1,0 +1,244 @@
+.showcase__banner {
+  width: 100%;
+  min-height: 850px;
+  background-image: url("../../images/background.jpg");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  .showcase__content {
+    padding-top: 100px;
+    color: #fff;
+    h1 {
+      font-weight: bold;
+      font-size: 3.5rem;
+    }
+  }
+}
+
+.title-categories {
+  .ninjs-events {
+    color: #c82333;
+    font-weight: bold;
+  }
+}
+
+.event-categories {
+  .type-categories {
+    .list__groups {
+      min-width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .event-categories {
+    .clicked {
+      color: black;
+    }
+    .category-style {
+      color: black;
+    }
+    .list-group {
+      margin-right: 20px;
+      border: none;
+
+      text-decoration: none;
+      display: inline-block;
+      :hover {
+        text-decoration: underline;
+      }
+      .list-group-item:last-child {
+        border: none;
+      }
+    }
+  }
+  .event-opener {
+    text-decoration: none;
+  }
+}
+
+.events__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0 50px 0;
+  .event-opener {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  img {
+    transition: all 1s ease-in-out;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  .card__content {
+    padding: 10px 0 0 10px;
+  }
+  h2 {
+    color: #d1410c;
+    font-size: 15px;
+  }
+  h5 {
+    padding: 10px 0;
+  }
+  p {
+    text-transform: uppercase;
+    color: #463f7e;
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom: 5px;
+  }
+
+  .event__tickets {
+    position: absolute;
+    top: 60px;
+    right: -2px;
+    font-weight: bold;
+    background-color: rgb(49, 49, 49);
+    color: #fff;
+    &:hover {
+      background-color: rgb(49, 49, 49);
+    }
+  }
+
+  .event__prize {
+    position: absolute;
+    top: 15px;
+    right: -5px;
+    font-weight: bold;
+    background-color: rgb(241, 239, 239);
+    color: #222;
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}
+
+.pagination-container {
+  border: "none";
+  display: flex;
+  justify-content: center;
+
+  margin: 20px 0;
+}
+
+.pagination-icon {
+  height: 25px !important;
+  width: 25px !important;
+  border: none;
+}
+
+.current-page {
+  color: black;
+  border: none;
+  text-decoration: none !important;
+  :hover {
+    text-decoration: none !important;
+    color: #ffffff !important;
+  }
+
+  margin: 0 10px;
+}
+
+.current-page-hover {
+  text-decoration: none !important;
+  :hover {
+    text-decoration: none !important;
+  }
+}
+
+.pgDisabled {
+  pointer-events: none !important;
+}
+
+@media screen and (max-width: 990px) {
+  .showcase__banner {
+    .event-categories {
+      .list-group {
+        margin-right: 20px;
+        border: none;
+        text-decoration: none;
+        display: flex;
+        align-content: stretch;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .events__container {
+    .image__container {
+      width: 250px;
+      margin-right: 10px;
+      img {
+        object-fit: fill;
+        &:hover {
+          transform: scale(1);
+        }
+      }
+    }
+    h5 {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 808px) {
+  .events__container {
+    .event__tickets {
+      width: 100px;
+      right: -40px;
+      transition: all 0.5s ease;
+      &:hover,
+      &:focus {
+        right: -2px;
+      }
+    }
+
+    .event__prize {
+      width: 50px;
+      right: -40px;
+      background-color: #222;
+      transition: all 0.5s ease;
+      color: #fff;
+      &:hover,
+      &:focus {
+        right: -2px;
+        background-color: #222;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 559px) {
+  .events__container {
+    .image__container {
+      width: 100%;
+      img {
+        object-fit: cover;
+      }
+    }
+    .event__tickets {
+      background-color: rgb(250, 250, 250);
+      color: rgb(61, 60, 60);
+      &:hover {
+        background-color: rgb(250, 250, 250);
+      }
+    }
+
+    .event__prize {
+      background-color: rgb(61, 60, 60);
+      color: rgb(250, 250, 250);
+      &:hover {
+        background-color: rgb(61, 60, 60);
+      }
+    }
+    h5 {
+      display: block;
+    }
+  }
+}
