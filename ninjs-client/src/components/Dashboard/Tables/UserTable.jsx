@@ -243,7 +243,7 @@ export default function UserTable() {
   const getUsersList = async () => {
     const response = await getRegister();
     const filteredUsers = response.filter(
-      (user) => user.role_id === "5faa6b8103499f05f018ea98"
+      (user) => user.role_id === "6138efbe2a798bcfccd6cfe2"
     );
     setUsers(filteredUsers);
   };

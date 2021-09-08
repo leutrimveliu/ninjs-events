@@ -1,3 +1,3 @@
 module.exports = {
-  DB: "mongodb+srv://flamur:flamur@cluster0.sftyk.mongodb.net/ninJSDB",
+  DB: "mongodb://localhost:27017/ninJSDB",
 };

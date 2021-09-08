@@ -111,7 +111,7 @@ router.put("/:id", upload, verifyToken, validationChecks, function (req, res) {
               // Check if this user is the user who created the event or is an admin
               if (
                 compareUserId == validateEventId ||
-                validateRoleId == "5faa6b4c03499f05f018ea96"
+                validateRoleId == "6138ef982a798bcfccd6cfe0"
               ) {
                 const errors = validationResult(req);
                 if (!errors.isEmpty()) {
@@ -198,7 +198,7 @@ router.delete("/:id", verifyToken, function (req, res, next) {
               // Check if this user is the user who created the event
               if (
                 compareUserId == validateEventId ||
-                validateRoleId == "5faa6b4c03499f05f018ea96"
+                validateRoleId == "6138ef982a798bcfccd6cfe0"
               ) {
                 Event.findByIdAndRemove(req.params.id, (error, data) => {
                   if (error) return next(error);
@@ -238,7 +238,7 @@ router.put("/approve/:id", verifyToken, function (
             const validateRoleId = await event.role_id;
             // console.log(validateRoleId);
             // Check if this user is the user who created the event or is an admin
-            if (validateRoleId == "5faa6b4c03499f05f018ea96") {
+            if (validateRoleId == "6138ef982a798bcfccd6cfe0") {
               Event.findByIdAndUpdate(
                 req.params.id,
                 {

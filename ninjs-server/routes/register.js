@@ -135,7 +135,7 @@ router.put("/:id", verifyToken, function (req, res) {
         const compareUserId = authData.user._id;
         // Check if user_id of the event has been maliciously modified
         if (compareUserId == req.body.user_id) {
-          if (req.body.adm_id == "5faa6b4c03499f05f018ea96") {
+          if (req.body.adm_id == "6138ef982a798bcfccd6cfe0") {
             Register.findByIdAndUpdate(
               req.params.id,
               { role_id: req.body.role_id },

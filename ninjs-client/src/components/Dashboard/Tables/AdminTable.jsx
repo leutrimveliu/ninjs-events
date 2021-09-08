@@ -223,7 +223,7 @@ export default function UserTable() {
   const getUsersList = async () => {
     const response = await getRegister();
     const filteredAdmins = response.filter(
-      (user) => user.role_id === "5faa6b4c03499f05f018ea96"
+      (user) => user.role_id === "6138ef982a798bcfccd6cfe0"
     );
     setUsers(filteredAdmins);
   };

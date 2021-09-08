@@ -56,7 +56,7 @@ router.delete("/:id", verifyToken, function (req, res, next) {
         const compareUserId = authData.user._id;
             // Check if user_id of the event has been maliciously modified
         if (compareUserId == req.body.user_id) {
-          if (req.body.adm_id == "5faa6b4c03499f05f018ea96") {
+          if (req.body.adm_id == "6138ef982a798bcfccd6cfe0") {
             Event.find({ eventCategory: req.params.id }, function (err, event) {
               if (err) return next(err);
               // res.json(event);
@@ -105,7 +105,7 @@ router.post("/", verifyToken, validationChecks, function (req, res) {
         // Check if user_id of the event has been maliciously modified
         if (compareUserId == req.body.user_id) {
           // Role.findById(compareUserId, async function (err, event) {
-            if (req.body.adm_id == "5faa6b4c03499f05f018ea96") {
+            if (req.body.adm_id == "6138ef982a798bcfccd6cfe0") {
               const errors = validationResult(req);
               if (!errors.isEmpty()) {
                 console.log(errors);
@@ -149,7 +149,7 @@ router.put("/:id", verifyToken, validationChecks, function (req, res) {
             // const validateRoleId = await user.role_id;
             // Category.findById(req.body.categoryId, async function (err, event) {
             // if ( validateRoleId == "5faa6b4c03499f05f018ea96" ) {
-              if (req.body.adm_id == "5faa6b4c03499f05f018ea96" ) {
+              if (req.body.adm_id == "6138ef982a798bcfccd6cfe0" ) {
 
               // await unlinkAsync(`../assets/uploads/${event.eventPhoto}`);
               console.log(req.body)

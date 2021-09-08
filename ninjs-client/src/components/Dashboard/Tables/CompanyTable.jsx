@@ -260,7 +260,7 @@ export default function CompanyTable() {
   const getUsersList = async () => {
     const response = await getRegister();
     const filteredUsers = response.filter(
-      (user) => user.role_id === "5faa6b7503499f05f018ea97"
+      (user) => user.role_id === "6138efac2a798bcfccd6cfe1"
     );
     setUsers(filteredUsers);
   };

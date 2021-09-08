@@ -437,7 +437,7 @@ router.post("/", upload, verifyToken, validationChecks, function (req, res) {
             if (err) return err;
             const validateRoleId = await event.role_id;
 
-            if (validateRoleId == "5faa6b7503499f05f018ea97") {
+            if (validateRoleId == "6138efac2a798bcfccd6cfe1") {
               const errors = validationResult(req);
 
               if (!errors.isEmpty()) {
